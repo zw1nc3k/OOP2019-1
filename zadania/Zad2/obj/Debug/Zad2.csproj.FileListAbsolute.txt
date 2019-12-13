@@ -1,0 +1,6 @@
+C:\Users\Arkadiusz\source\repos\Zad2\Zad2\bin\Debug\Zad2.exe.config
+C:\Users\Arkadiusz\source\repos\Zad2\Zad2\bin\Debug\Zad2.exe
+C:\Users\Arkadiusz\source\repos\Zad2\Zad2\bin\Debug\Zad2.pdb
+C:\Users\Arkadiusz\source\repos\Zad2\Zad2\obj\Debug\Zad2.exe
+C:\Users\Arkadiusz\source\repos\Zad2\Zad2\obj\Debug\Zad2.pdb
+C:\Users\Arkadiusz\source\repos\Zad2\Zad2\obj\Debug\Zad2.csprojAssemblyReference.cache
