@@ -1,0 +1,6 @@
+C:\Users\Arkadiusz\Desktop\obiektowe\Kolos testowy\Kolos testowy\bin\Debug\Kolos testowy.exe.config
+C:\Users\Arkadiusz\Desktop\obiektowe\Kolos testowy\Kolos testowy\bin\Debug\Kolos testowy.exe
+C:\Users\Arkadiusz\Desktop\obiektowe\Kolos testowy\Kolos testowy\bin\Debug\Kolos testowy.pdb
+C:\Users\Arkadiusz\Desktop\obiektowe\Kolos testowy\Kolos testowy\obj\Debug\Kolos testowy.csprojAssemblyReference.cache
+C:\Users\Arkadiusz\Desktop\obiektowe\Kolos testowy\Kolos testowy\obj\Debug\Kolos testowy.exe
+C:\Users\Arkadiusz\Desktop\obiektowe\Kolos testowy\Kolos testowy\obj\Debug\Kolos testowy.pdb
