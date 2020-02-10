@@ -1,0 +1,5 @@
+Zadania:
+Naprawić błąd z “szybkim zawracaniem”
+dodać wyświetlanie punktów
+dodać menu główne
+Poprawić wydajność

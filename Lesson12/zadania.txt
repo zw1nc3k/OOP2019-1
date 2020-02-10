@@ -1,0 +1,55 @@
+Stwórz nowy projekt dla WPF.
+Za pomocą designera lub ręcznie kodem usuń grid w MainWindow
+Na window za pomocą designera upuść StackPanel.
+Na StackPanel upuść 5 przycisków. Śledź zmiany w kodzie. Jakie parametry możesz pozmieniać w designer? jakie w Properties? a jakie ręcznie w kodzie?
+czy możesz w dowolny sposób umieścić buttony?
+dla każdego z buttonów poustawiaj parametry takie jak VerticalAlignment, HorizontalAlignment, Margin (tu zwróć uwagę co znaczy podanie jednego, dwóch lub czterech parametrów), VerticalContentAlignment, HorizontalContentAlignment, Padding
+spójrz co możesz zrobić w oknie Design, co w Properties, co pod prawym klawiszem myszy, a co tylko w kodzie.
+Ręcznie w kodzie zmień StackPanel na WrapPanel. Co się zmieniło?
+Teraz WrapPanel zamień na DockPanel. Sprawdź zmiany.
+Zmień DockPanel na Grid.
+Za pomocą designera stwórz kilka rzędów i kolumn. Spójrz na kod.
+Za pomocą designera i bezpośrednio w kodzie zrób tak, aby każdy wcześniej dodany button był w oddzielnym elemencie w siatce.
+Upewnij się że w kodzie do każdego button jest przypisany rząd i kolumna. Następnie za pomocą designera zmień szerokość niektórych rzędów i kolumn.
+Stwórz nowy projekt. W gridzie umieść Combox. Naciśnij dwa razy na ten element.
+Za pomocą PPM dodaj kilka itemów na listę rozwijaną.
+Dwukrotnie kliknij na listę i dodaj eventy po wybraniu odpowiedniej opcji.
+Stwórz nowy projekt. Stworzymy to samo bez designera.
+Wewnątrz grid dodaj kod:
+<ComboBox
+    	HorizontalAlignment="Center"
+    	Margin="10,10,0,0"
+    	VerticalAlignment="Top"
+    	Width="200"
+    	Loaded="ComboBox_Loaded"
+    	SelectionChanged="ComboBox_SelectionChanged"/>
+Ustaw kursor na ComboBox_Loaded i wciśnij F12. VS utworzy automatycznie odpowiednią metodę. We wnętrzu wpisz:
+// ... lista
+        	List<string> data = new List<string>();
+        	data.Add("Book");
+        	data.Add("Computer");
+        	data.Add("Chair");
+        	data.Add("Mug");
+
+        	// ... ustawienie referencji
+        	var comboBox = sender as ComboBox;
+
+        	// ... ustawienie zródla
+        	comboBox.ItemsSource = data;
+
+        	// ... czy cos domyslnie ma byc wybrane
+        	comboBox.SelectedIndex = 0;
+zrób ja aby utworzyć metodę ComboBox_SelectionChanged, we wnętrzu wpisz:
+// ... dostep do combo.
+        	var comboBox = sender as ComboBox;
+
+        	// ... ustawiemy wybraną opcję jako tytul okna
+        	string value = comboBox.SelectedItem as string;
+        	this.Title = "Selected: " + value;
+Która metoda jest dla Ciebie lepsza, wygodniejsza, bardziej elastyczna?
+
+
+
+
+Zadanie:
+przerób stworzony na poprzednich ćwiczeniach konsolowy kalkulator na wersję “graficzną”, z listy rozwijanej ma być wybierana operacja, potem pobierana liczba1 i liczba2 a na ekranie wyswietlony wynik

@@ -1,0 +1,18 @@
+Stwórz klasę Osoba, dodaj w niej prywatne pola imie i wiek. Następnie dodaj konstruktor domyślny i parametryczny. Dodaj metody na oddzielne ustawienie i pobranie wieku i imienia.
+Rozważ następujące kolekcje: Stack, Stack<T>, Queue, Queue<T>, ArrayList, List<T>,Dictionary<TKey,TValue>,SortedDictionary<TKey,TValue>,SortedList<TKey,TValue>,LinkedList<T>,BitArray, HashSet<T>,SortedSet<T>, Hashtable, OrderedDictionary, ListDictionary, HybridDictionary, Collection<T>, CollectionBase.
+Z listy kolekcji z punktu 2 wybierz trzy kolekcje i wykonaj dla nich następujące operacje:
+stwórz odpowiednią kolekcję (jedną z elementami typu int, drugą typu string, trzecią typu Osoba)
+zastanów się jaką przestrzeń nazw potrzebujesz do stworzenia kolekcji
+spróbuj dodać na stworzone kolekcje element innego typu - czy wszystko jest możliwe?
+różnymi operacjami spraw, żeby każda z kolekcji miała co najmniej 5 elementów
+za pomocą foreach wyświetl kolejne elementy kolekcji na konsoli (dla Osób ma być ich wiek i imię - możesz przesłonić metodę ToString())
+spróbuj z kolekcji wydobyć pierwszy, trzeci i ostatni element - czy wszystko jest możliwe?
+spróbuj posortować elementy w stworzonych kolekcjach, pomyśl czy to jest możliwe, czy musisz coś uzupełnić w kodzie, ew może nic nie musisz robić bo elementy po dodaniu są już sortowane?
+wyświetl na konsoli liczbę elementów w danej kolekcji oraz pojemność kolekcji (capavity), skąd są różnice?
+spróbuj usunąć czwarty element w każdej kolekcji, czy to jest możliwe?
+odwróć kolejność elementów w danej kolekcji
+
+Zadania z treścią:
+Stwórz symulator gry w oczko (talia 24 kart). Dobierz odpowiednią kolekcję do przechowywania kart obu graczy. Podpowiedź: jeśli będzie łatwiej stwórz własny typ enum na przechowywanie kart.
+Za pomocą słownika zrób tabliczkę mnożenia dla liczb zapisywanych w systemie rzymskim (key ustaw na liczby powiedzmy od 1 do 3, a value odpowiedni string - liczba w zapisie rzymskim).
+Przeanalizuj program dostępny tu https://github.com/Piotrekk85/SzybkoscKolekcjiTest , ktory służy do porównania szybkości dostępu do elementów na kolekcje. Zmodyfikuj program aby potestować szybkości innych kolekcji.

@@ -1,0 +1,33 @@
+Przypominając sobie wyjątki z ćwiczeń nr.3, stwórz program w którym na trzech zmiennych liczbowych typu int, wystąpi dzielenie przez zero. Następnie zabezpiecz go blokiem try…catch…finally.
+Sprawdź w Visual Studio lub Internecie czego dotyczą następujące wyjątki:
+StackOverflowException
+NullReferenceException
+FileNotFoundException
+AccessViolationException
+IndexOutOfRangeException
+Sprawdź jak dużo różnych wyjątków jest wpisując throw Exception (wyświetli się lista na której będzie można sprawdzić listę dostępnych wyjątków. UWAGA: może być ich więcej lub mniej w zależności od użytych „using-ów”)
+Napisz statyczną metodę metoda23, która będzie wyrzucała wyjątek notImplemented (Często przygotowuje się miejsce na metody które mają zostać zaimplementowane w późniejszym terminie), następnie w kodzie programu w bloku try wywołaj tą metodę.
+Stwórz własną klasę wyjątku (krok po kroku stworzyć jakąś klasę i jakiś wyjątek)
+Teoretycznie wystarczy stworzyć klasę dziedziczącą po System.Exception, stwórz publiczną klasę NaszWyjatekException.
+Przydałoby się zdefiniować przynajmniej jeden użyteczny konstruktor, a także doimplementować domyślny, stwórz konstruktor NaszWyjatekException(string message) : base(message)
+Mamy już dwa konstruktory i nasz wyjątek będzie się zachowywał jak większość poznanych wcześniej, powinniśmy jednak zadbać o jeszcze 2 konstruktory:
+NaszWyjatekException(String message, Exception innerException)
+   	   : base(message, innerException)
+
+NaszWyjatekException(SerializationInfo info, StreamingContext context)
+    : base(info, context)
+
+W projekcie o nazwie Watki, stwórz pętlę od 1 do 10000, która będzie wypisywać następującą informację program1: i (gdzie i to oczywiście wartość licznika)
+Do projektu dodaj metodę Licz, która będzie działała identycznie jak kod z pkt.5 poza wyświetlanym tekstem – zamiast słowa program, użyjemy słowa watek.
+W programie tuż przed kodem z pkt.5 dopisz następujący kod:
+Thread thr = new Thread(Licz);
+thr.Start();
+
+
+
+
+ZADANIA:
+Stwórz konsolowy kalkulator.
+Rozplanuj program tak, aby stworzyć 3 poziomy abstrakcji. Użyj dowolnych poznanych metod aby to osiągnąć.
+Użyj wyjątków, aby zabezpieczyć kod przed błędnym wprowadzaniem wyników, oraz ewentualnymi błędami wynikającymi z działań na liczbach.
+ *Czy dasz radę utworzyć kilka wątków i wykonać wszystkie funkcje kalkulatora na jednych zmiennych w oddzielnych wątkach?

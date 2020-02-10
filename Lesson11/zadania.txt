@@ -1,0 +1,33 @@
+Utwórz nowy projekt WPF Application
+Przejrzyj utworzone pliki (MainWindows.xaml, MainWindows.xaml.cs, App.xaml). Sprawdź okna “XAML” oraz “Design”
+W pliku z kodem można zauważyć wiele twierdzeń “using” dlaczego?
+Przyjrzyj się metodzie InitializeComponent(). Gdzie jest wywoływana? Jak myślisz za co odpowiada?
+Otwórz MainWindows.xaml. Zmień wielkość okna.
+Z paska “Toolbox” przeciągnij kontrolkę “Button” oraz dwie “TextBox”
+Edytować kontrolkę można w pliku xaml lub w oknie “Properties”.
+Zmień nazwy kontrolek na MyButton, MyTextBoxPobieranie oraz MyTextBoxWyświetlanie
+Dwukrotnie kliknij na kontrolce “Button” aby dodać do niej zdarzenie związane z przyciśnięciem.
+Zadeklaruj zmienną imię (przed zdarzeniem).
+W zdarzeniu (MyButton_Click) do imienia przypisz wartość pobierając ją z TextBoxa, korzystając w właściwości Text.
+Wyświetl MessageBox za pomocą komendy Show, wyświetl w nim wiadomość “Cześć ***” w miejscu *** powinna znaleźć się wartość imienia.
+
+
+
+
+Po tych ćwiczeniach podstawowych czas na zrobienie zadań:
+Zadania:
+Przerób kod stworzony na ćwiczeniach tak aby:
+Każdy TextBox był podpisany (np. za pomocą “Labela”)
+Wynik wyświetlany był w drugim “TextBoxie” zamiast w MessageBox.
+Drugi TextBox był zablokowany dla użytkownika na edycję.
+Dodaj drugi przycisk który będzie czyścił wynik
+W pierwszym TextBoxie niech na starcie wyświetla się komunikat “Wprowadź imię” - jeśli użytkownik tego nie wprowadzi nie może się to wyświetlać jako wartość imienia
+
+
+Stwórz nową aplikację.
+Dodaj do niej 4 przyciski, 3 textboxy.
+2 “textboxy” mają odpowiadać za okna do wprowadzania danych dla użytkownika, 1 ma być zablokowany i odpowiadać za wyświetlanie wyniku
+Przyciski mają odpowiadać za odpowiednie działania - dodawanie, odejmowanie, mnożenie, dzielenie
+Działania/dane mają być zabezpieczone przed błędnym wprowadzeniem
+Za pomocą properties zmień tło aplikacji
+Za pomocą properties zmień kolor przycisków

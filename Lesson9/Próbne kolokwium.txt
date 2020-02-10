@@ -1,0 +1,53 @@
+Zad 1
+Stwórz klasę Character z polami:
+zmiennoprzecinkowa posx
+zmiennoprzecinkowa posy
+całkowita level
+tekstowa nick
+zmienna typu wyliczeniowego charClass warrior, mage, archer
+
+Napisz własny konstruktor domyślny i ustaw jego dostęp na prywatny.
+Następnie utwórz metodę Generate, która ma tworzyć obiekty klasy Character.
+Stwórz dwa obiekty o różnych wartościach pól.
+
+Stwórz zmienną typu wyliczeniowego classDamage. Dostępne typy to: 0.5, 1, 1.5.
+Stwórz metodę CalculateDamage liczącą według podanego wzoru:
+(char1.level - char2.level * classDamage).
+Gdzie typ klasy zależy od klasy przeciwnika (jak to samo 1, wojownik 1,5 - łucznik 0,5, mag 1,5 - wojownik 0,5 itp)
+
+Obsłuż błędy tak żeby obrażenia wynosiły przynajmniej 0.
+
+
+Zad 2
+Stwórz klasę Character (zad1) zawierającą metodę action (wyświetlającą co postać robi np. “{Nick} is walking”).
+
+a. Stwórz 3 klasy dziedziczące po graczuu: Warrior, Mage, Archer.
+Każdy z nich ma mieć własną metodę action. Dodaj obiekty typu Warrior, Mage, Archer,
+Character do listy i w pętli foreach wywołaj metodę action.
+
+Zad 3
+
+Stwórz generator map.
+interface IMapa {
+public void generate(); //generowanie mapy na podstawie podanych wymiarów
+public void list(); //wyśœietlenie informacji na temat każdego elementu dodanego do mapy
+public void show(); // wyświetlenie mapy
+}
+Klasa Mapa implementująca interfejs IMapa:
+powinna inicjować tabglicę o wilekości zgodnej z tym co poda użytkownik.
+Klasa Point: powinna zawierać współrzędne x i y oraz metodę print() - która wyświetli te współrzędne
+Klasa MapElement dziedziczy po Point i zawiera atrybut icon (pojedynczy char, który będzie się wyświetlał w konsoli przy generowaniu mapy)
+Klasa Grass: dziedziczy po MapElement, i ma ustawioną ikonę jako G i implementuje włąsną metodę print z informacją, zę to jest trawa + współrzędne
+Klasa Tree: dziedziczy po MapElement, i ma ustawioną ikonę jako T i implementuje włąsną metodę print z informacją, zę to jest drzewo + współrzędne
+Klasa Rock: dziedziczy po MapElement, i ma ustawioną ikonę jako R i implementuje włąsną metodę print z informacją, zę to jest kamień + współrzędne
+
+Dodaj obsługę błędów np: błędne współrzędne
+
+Zad 4
+Listę z zadania 2 posortuj po Nick'u
+
+Zad 5
+
+Stwórz aplikację sterującą postacią z zadania 1. Dodaj metodę walk,
+która modyfikuje wewnętrzne zmienne postaci i wyświetla wiadomosć na temat aktualnych współrzędnych, nick'a i co aktualnie robi.
+Zakończenie aplikacji ma być na rządanie uzytkownika.
